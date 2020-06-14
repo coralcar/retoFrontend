@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Rick and Morty</title>
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <script src='script.js'></script>
+
+    </head>
+    
+    <body>
+
+        <img id='logo-RM' src="images/logo.png">
+
+        <div id='main'>   
+            <div class='column1'>     
+                <img id ="portrait">                 
+            </div>           
+            <div class = 'column2'>
+                    <div class='character-name'> <h2 id ='name'></h2> </div>
+                    <div class="character-data">                    
+                        <div class='dato'> <p>Origen: <span id = 'origin'></span></p> </div>
+                        <div class='dato'> <p>Especie: <span id = 'species'></span></p> </div>   
+                        <div class='dato'> <p>Estatus: <span id = 'status'></span></p> </div>        
+                    </div>                    
+            </div> 
+            <!--Botones para navegar entre personajes-->
+            <button class="prev" onclick="previousChar()"> < </button>         
+            <button class="next" onclick="nextChar()"> > </button>
+        </div>
+
+        
+        <div class='footer'><img id="logo-ING" src="images/logo_ing.svg"></div>      
+
+    </body>
+
+</html>
